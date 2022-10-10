@@ -1,13 +1,13 @@
 import App from "../App";
 
-import FireDatabaseAnimals from "./animals/FireDatabaseAnimals";
+import APIDatabaseAnimals from "./animals/APIDatabaseAnimals";
 
 class FireApi {
 	app: App;
-	animals: FireDatabaseAnimals;
+	animals: APIDatabaseAnimals;
 	constructor(app: App) {
 		this.app = app;
-		this.animals = new FireDatabaseAnimals(app);
+		this.animals = new APIDatabaseAnimals(app);
 	}
 }
 export default FireApi;

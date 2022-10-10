@@ -3,16 +3,13 @@ import Animal from "../../classes/Animal";
 import utils from "../../libs/utils/utils";
 import { BASE_ANIMALS, BASE_DEFORESTATION_ZONES } from "../../mocks/moks";
 
-class FireDatabaseAnimals {
+class APIDatabaseAnimals {
 	private app: App;
-	allAnimals: Record<string, string>
 	constructor(app: App) {
 		this.app = app;
-		this.allAnimals = {};
 	}
 
 	getVulnerableAnimals() {
-
 		return new Promise<Animal[]>((resolve, reject) => {
 			try {
 				const animalsAffected: Animal[] = []
@@ -36,7 +33,6 @@ class FireDatabaseAnimals {
 			}
 		});
 	}
-
 }
 
-export default FireDatabaseAnimals;
+export default APIDatabaseAnimals;
