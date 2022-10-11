@@ -34,3 +34,8 @@ This project has been realized in Node.js with Express to configure the server t
 
  The system is oriented to link to a database that contains and allows extracting the information to analyze, in this case, default data was defined in order to verify and validate that the information expected to be obtained is calculated
  in a correct way.
+
+ # Docker Commands
+ docker build . -t marher21/test-ciat   
+ docker -p 5001:3001 -d marher21/test-ciat (5001 puerto en la maquina) (3001 puerto del proyecto)
+ docker run -p 5001:3001 -d marher21/test-ciat
